@@ -1,0 +1,9 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "Frontend capstone project settings form",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/validation.test.js"
+  }
+}
