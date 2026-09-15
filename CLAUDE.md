@@ -50,3 +50,12 @@ When making changes:
 3. Make focused changes rather than unnecessary rewrites.
 4. Verify that the changes work.
 5. Summarize the changes made.
+
+## Learned Project Rules
+
+- Keep validation logic in pure, reusable functions in `js/validation.js`; cover validation behavior with tests in `tests/validation.test.js`.
+- Every form control must have an associated accessible label. Validation errors must use `aria-invalid` and `aria-describedby`, and form-level status messages must use an appropriate live region.
+- Test boundary and edge cases explicitly, including minimum/maximum lengths, optional fields, password confirmation, and invalid input.
+- Run `npm test` and confirm all tests pass before committing changes to form validation.
+- Never log passwords or other sensitive credential values. Log only sanitized information such as whether a password was updated.
+- Review user-facing text for Unicode/encoding corruption before committing; generated text must display readable characters such as en dashes correctly.
