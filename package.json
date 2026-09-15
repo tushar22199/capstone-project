@@ -1,0 +1,10 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "Frontend capstone project with a settings form",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve . -l 3000",
+    "dev": "npm start"
+  }
+}
